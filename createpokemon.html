@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tambah Pokemon</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="card">
+        <h1 class="card-header info-color text-white text-center py-4 bg-primary">
+            <strong>Identitas Pokémon</strong>
+        </h1>
+        <div class="card-body px-lg-5 pt-0"></div>
+        <form action="process.php" method="post">
+            <div class="container">
+                <div class="form-group">
+                    <label for="name"><b>Nama Pokemon</b></label>
+                    <input type="name" class="form-control" id="name" placeholder="Enter name" name="name">
+                </div>
+                <div class="">
+                    <label for="pwd"><b>Tipe Pokemon</b></label>
+                    <select name="type" class="browser-default custom-select mb-4" input type="text">
+                        <option value="Normal">Normal</option>
+                        <option value="Fighting">Fighting</option>
+                        <option value="Poison">Poison</option>
+                        <option value="Ground">Ground</option>
+                        <option value="Rock">Rock</option>
+                        <option value="Bug">Bug</option>
+                        <option value="Ghost">Ghost</option>
+                        <option value="Steel">Steel</option>
+                        <option value="Fire">Fire</option>
+                        <option value="Water">Water</option>
+                        <option value="Grass">Grass</option>
+                        <option value="Electric">Electric</option>
+                        <option value="Psychic">Psychic</option>
+                        <option value="Ice">Ice</option>
+                        <option value="Dragon">Dragon</option>
+                        <option value="Dark">Dark</option>
+                        <option value="Fairy">Fairy</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="species"><b>Spesies Pokemon</b></label>
+                    <input type="name" class="form-control" id="species" placeholder="Enter species" name="species">
+                </div>
+                <div class="form-group">
+                    <label for="Height"><b>Height</b></label>
+                    <input type="number" class="form-control" placeholder="0.0" step="0.1" title="Currency" pattern="^\d+(?:\.\d{1,1})?$" onblur="this.parentNode.parentNode.style.backgroundColor=/^\d+(?:\.\d{1,2})?$/.test(this.value)?'inherit':'red'">
+                </div>
+                <div class="form-group">
+                    <label for="Weight"><b>Weight</b></label>
+                    <input type="number" class="form-control" placeholder=".0" step="0.1" title="Currency" pattern="^\d+(?:\.\d{3,1})?$" onblur="this.parentNode.parentNode.style.backgroundColor=/^\d+(?:\.\d{1,2})?$/.test(this.value)?'inherit':'red'">
+                </div>
+                <div class="form-group">
+                    <label for="abilities"><b>Ability</b></label>
+                    <input type="name" class="form-control" id="species" placeholder="Enter ability" name="Ability">
+                </div>
+                <button type="submit" class="btn btn-primary">Buat Pokemon!</button>
+                <!-- </form> -->
+            </div>
+        </form>
+      </div>
+</body>
+</html>
