@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Pokedéx!</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <style>
+        .jumbotron {
+            background-image: url(img/welcome.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 608px;
+            weight: 1000px;
+            text-align: center;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+        .jumbotron .desc{
+            color: var(--red);
+            font-family: arial;
+            background-color: white;
+            /* padding-top: 5px; */
+            border-radius: 3em 3em 3em 3em;
+            /* transition: transform 0.2s, box-shadow 0.2s; */
+        }
+        .jumbotron h1{
+            margin-top: 100px;
+            font-weight: bold;
+            font-size: 50px;
+        }
+
+        .jumbotron .desc p{
+            font-size: 20px;
+            color: black;
+            margin-top: -5px;
+        }
+
+        .btn{
+            background-color: var(--red);
+            padding: 0.5em 1.5em;
+            font-size: 1.5em;
+            color: #fff;
+            outline: none;
+            border: none;
+            transition: transform 0.2s, box-shadow 0.2s;
+            border-radius: 1.5em 1.5em 1.5em 1.5em;
+            cursor: pointer;
+            margin-top: 30px;
+        }
+
+        .btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 5px #00000040;
+        }
+    </style>
+</head>
+<body>
+    <div class="jumbotron">
+        <div class="desc">
+            <h1 class="display-4"><strong>Welcome to Pokedéx!</strong></h1>
+            <p>Tambah koleksi pokemonmu atau lihat pokemon yang sudah ada.</p>
+        </div>
+        <a class="btn" href="create-pokemon.html" role="button"><b>Buat Pokemon</b></a>
+        <a class="btn" href="indextable.php" role="button"><b>Lihat Koleksi Pokemon</b></a>
+      </div> 
+</body>
+</html>
